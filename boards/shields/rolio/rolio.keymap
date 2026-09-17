@@ -51,7 +51,7 @@
 
         windows_default_layer {
             display-name = "Windows";
-            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&scroll_up_down &inc_dec_kp C_VOL_UP C_VOL_DN >;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
        &kp GRAVE      &kp Q            &kp W           &kp E           &kp R           &kp T     /*|                                 |*/  &kp Y          &kp U           &kp I           &kp O           &kp P          &mt LC(BSPC) BSPC
@@ -76,7 +76,7 @@
         };
 
         windows_symbols_layer {
-            display-name = "Symbols (Win)";
+            display-name = "HIIM";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
@@ -89,7 +89,7 @@
         };
 
         numpad_layer {
-            display-name = "Number Pad";
+            display-name = "NOOM PAD";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
@@ -104,7 +104,7 @@
 
         macos_f_keys_layer {
             display-name = "F Keys (Mac)";
-            sensor-bindings = <&mac_vol &scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬────────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
   &usb_tog OUT_TOG ESCAPE &btkp 0 F1   &btkp 1 F2      &btkp 2 F3      &btkp 3 F4      &btkp 4 F5 /*|                                 |*/   &kp F6         &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
@@ -116,8 +116,8 @@
         };
 
         windows_f_keys_layer {
-            display-name = "F Keys (Win)";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_up_down>;
+            display-name = "BIIM";
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬────────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
   &usb_tog OUT_TOG ESCAPE &btkp 0 F1   &btkp 1 F2      &btkp 2 F3      &btkp 3 F4      &btkp 4 F5 /*|                                 |*/   &kp F6         &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
@@ -132,7 +132,7 @@
 
       settings_layer {
             display-name = "Settings";
-            sensor-bindings = <&bri_adjust &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&bri_adjust &bri_adjust>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬────────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
       &out OUT_TOG     &btkp 0 N1      &btkp 1 N2      &btkp 2 N3      &btkp 3 N4      &btkp 4 N5 /*|                                 |*/   &kp N6         &kp N7          &kp N8          &kp N9          &kp N0          &soft_off
